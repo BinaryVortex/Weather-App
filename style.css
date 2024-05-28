@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #6bf59b;
+  margin: 0;
+}
+
+body.dark-mode {
+  background: #2C3E50;
+  color: #ECF0F1;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+body.dark-mode .container {
+  background: #34495E;
+}
+
+#weather, #forecast {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(100% - 22px);
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading {
+  font-size: 1.2em;
+  color: #007BFF;
+}
+
+.forecast-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.forecast-item:first-child {
+  border-top: none;
+}
+
+body.dark-mode #loading {
+  color: #ECF0F1;
+}
+
+body.dark-mode input, body.dark-mode button {
+  background: #ECF0F1;
+  color: #2C3E50;
+}
